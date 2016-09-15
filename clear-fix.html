@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///Users/Autumn/Downloads/clear-fix%20(1).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Float Boxes</title>
+    <style>
+    .row {
+      /* the following black background isn't appearing! Fix it. */
+      background-color: black;
+      margin: 10px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+      margin: 10px;
+      float: left;
+    }
+    .cf:before,
+    .cf:after {
+        content: " ";
+        display: table;
+    }
+    .cf:after {
+        clear: both;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="row cf">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="row cf">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+
+</body></html>
